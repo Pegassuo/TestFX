@@ -9,11 +9,10 @@ public class Utilities {
 
     //Comprobar si es admin
     public static boolean isAdmin(TextField usuario, TextField contrasena){
-        boolean bl = false;
         if(usuario.getText().equals("cbr") && contrasena.getText().equals("carlos0903")){
-            bl = true;
+            return true;
         }
-        return bl;
+        return false;
     }
 
     //Negando la comprobación del admin
